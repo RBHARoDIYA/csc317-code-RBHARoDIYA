@@ -1,0 +1,35 @@
+
+<html>
+
+    <head>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta content="en-us" http-equiv="Content-Language" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="/css/MyStyle.css">
+        <script type="text/javascript" src="/js/signup.js">
+        </script>
+    </head>
+     <form name="myform" onsubmit= "return validateForm()" method="post" action="/search">
+        <img src="/img/websiteLogo.png" width="auto" height="200px" align="top"/>
+    <header>
+    
+      
+    
+        <input tabindex="1" type="text" name="q" id="searching" placeholder="Search Images"
+               value="" class="searching popover_button" autocomplete="off"  />
+        <input class="search" name="search"  type="submit" onclick="location.href='/search'" value="Search"/>
+    
+    
+        </div>
+    </header>
+    </form>
+    <%   if(userId!=null) {%>
+      <input class="usernamedashboard" name="user name"  type="label"  value="<%= userId %>" />
+       <input class="usernamedashboard" name="userId"  type="hidden"  value="<%= userId %>" />
+     <% } %>
+       <input class="newpost" name="newpost"  type="submit" onclick="location.href='/fileupload?userId=<%= userId %>'" value="+ New Post" />
+        <input class="signoutbutton" name="signout"  type="submit" onclick="location.href='/logout'" value="Sign Out" />
+    
+    

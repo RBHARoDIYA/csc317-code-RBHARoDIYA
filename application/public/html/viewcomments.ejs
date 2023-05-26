@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/MyStyle.css">
+    </head>
+        <div class="table-wrapper">
+            <% if (posts.length > 0) {%>
+             <form name="myform" onsubmit= "return validateForm()" method="post" action="/postcomments">
+                <table class="table table-hovered">
+    
+                    <tbody>
+                      <% posts.forEach((post, index) => { %>
+                          <tr>
+                             <%   if(index==0) {%>
+                              <td>  <video width="640" height="360" controls>
+    <source src="/img/<%= post.IMAGENAME %>" type="video/mp4">
+    Your browser does not support the video tag.
+  </video><br></td>
+                              <td>
+                              <%   if(userId!=null) {%>
+                              <td><input class="signinbox" type="text" name="comments" placeholder="comments" style="width: 172px"> </td>
+                              <td><input  type = "submit" name="Post Comments" ></td>
+                                  <tr> <td>User Name</td><td>comments</td><td>time stamp</td> </tr>
+                                  <% } %></td></tr>
+    
+                                <% } %>
+                                </tr>
+    
+                                <tr>
+                                <td><%= post.USERNAME %></td>
+                                 <td><%= post.COMMENTS %></td>
+                                <td><%= post.TIMESTAMP %></td>
+                            </tr>
+    
+                        <% }) %>
+    
+    
+                    </tbody>
+                </table>
+                <input type="hidden" id="postname" name="postname" value="<%=postname%>">
+                <input type="hidden" id="userId" name="userId" value="<%=userId%>">
+    
+            <% } else { %>
+                <!-- <p class="text-center">No comments found. Go <a href="/postcomments?userId=<%=userId%>&postname=<%=postname%>" >here</a> to add posts.</p> -->
+    
+            <% } %>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>

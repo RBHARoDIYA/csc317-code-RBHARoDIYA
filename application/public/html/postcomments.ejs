@@ -1,0 +1,33 @@
+<html>
+<title> Post comments </title>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/MyStyle.css">
+    <script type="text/javascript" src="/js/signup.js">
+    </script>
+</head>
+
+<body>
+<div class="signUPborder">
+
+    <img class="signin-logo" src="/img/websiteLogo.png" width="55"height ="55" alt="Can't display">
+    <p class="introtext">Post comments</p>
+
+    <form name="myform" onsubmit= "return validateForm()" method="post" action="">
+        <table class="defaultTable" >
+            <tr>
+                <td> </td>
+                <td><input class="signinbox" type= "text" name= comments placeholder="comments" required> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="signupbutton" type = "submit" name= Post Comments ></td></tr>
+        </table>
+          <input type="hidden" id="postname" name="postname" value="<%=postname%>">
+          <input type="hidden" id="userId" name="userId" value="<%=userId%>">
+    </form>
+
+
+</body>
+
+
+</html>

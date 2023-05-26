@@ -1,0 +1,38 @@
+
+.body {
+    font-family: "Times New Roman", "Arial Nova Light","Traditional Arabic";
+}
+div.container {
+    margin: 5px;
+    border: 2px solid #8A0868;
+    float: right;
+    width: 280px;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.title {
+    padding: 10px;
+    text-align: left;
+    font-size: 130%;
+}
+
+.btn {
+    border: 5px solid #5882FA;
+    border-radius: 10px;
+    background-color: white;
+    color: #e27e7e;
+    padding: 14px 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1B2A0A;
+    color: white;
+}

@@ -1,0 +1,21 @@
+
+<% include header.ejs %>
+<% if (posts.length > 0) {%>
+   <br>
+   <div class="img-flex" >
+    <% posts.forEach((post, index) => { %>
+      <a href=""  target="popup" onclick="window.open('/viewcomments?postname=<%= post.POSTNAME %>','popup','width=600,height=600'); return false;"> <label></label>
+      <video width="640" height="360" controls>
+    <source src="/img/<%= post.IMAGENAME %>" type="video/mp4">
+    Your browser does not support the video tag.
+  </video><br>
+<!--       <img class="img-def" src="/img/<%= post.IMAGENAME %>" alt="Image" height="300" width="300" > <br> -->
+      </a>
+<% }) %>
+<% } else { %>
+     <p class="text-center">No posts found. Go <a href="/" >here</a> to add posts.</p>
+ <% } %>
+</div>
+
+</body>
+</html>

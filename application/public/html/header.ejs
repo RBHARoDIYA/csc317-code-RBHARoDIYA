@@ -1,0 +1,31 @@
+
+<html>
+
+    <head>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta content="en-us" http-equiv="Content-Language" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Photo App | Home</title>
+        <link rel="shortcut icon" type="image/jpg" href="/img/websiteLogo.png"/>
+        <link rel="stylesheet" type="text/css" href="/css/MyStyle.css">
+        <script type="text/javascript" src="/js/signup.js">
+        </script>
+    </head>
+    <form name="myform" onsubmit= "return validateForm()" method="post" action="/search">
+        <img class="websiteLogo" src="/img/websiteLogo.png"  align="top"/>
+    <header>
+    
+    
+        <input tabindex="1" type="text" name="q" id="searching" placeholder="Search Images"
+               value="" class="searching popover_button" autocomplete="off"  />
+    
+            <input class="search" name="search"  type="submit" onclick="location.href='/search'" value="Search" />
+    
+    </header>
+    </form>
+    <div class="input">
+     <input class="newpost" name="newpost"  type="submit" onclick="location.href='/signin'" value="+ New Post" />
+        <input class="signinbutton" type="submit" onclick="location.href='/signin'" name="submit" value="SignIn" >
+        <input class="signupbutton" type="submit" onclick="location.href='/signup'" name="submit" value="Sign Up" >
+    </div>

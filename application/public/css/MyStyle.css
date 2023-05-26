@@ -1,0 +1,257 @@
+
+body {
+    /* background-image: linear-gradient( white, #d0bff2); */
+    text-align:center;
+
+}
+form {
+    /* background-color:#cfcfcf; */
+    padding-bottom: 50px;
+    margin-bottom: 0;;
+}
+.input {
+    margin-top: 0;
+    padding-bottom: 50px;
+
+}
+/* header {
+    margin-bottom: 50px;
+} */
+label {
+    color: darkblue;
+    font-weight: bold;
+    font-size:medium;
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+Textarea{
+    vertical-align: top;
+}
+
+
+
+table.defaultTable {
+    margin:0 auto;
+    border: 0px solid #007be0;
+    width: 8%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.defaultTable td, table.defaultTable th {
+    border: 0px solid #AAAAAA;
+    padding: 3px 1px;
+
+}
+table.defaultTable tbody td {
+    font-size: 13px;
+}
+
+table.searchheader{
+    margin:0 auto;
+    border: 0px solid #007be0;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color:black;
+}
+table.searchheader td, table.searchheader th {
+    border: 0px solid #AAAAAA;
+    padding: 3px 1px;
+
+}
+table.searchheader tbody td {
+    font-size: 13px;
+}
+
+
+.image {
+    Background:black;
+    margin: 20px;
+    padding: 20px;
+}
+
+table.uploadtable  {
+    margin:0 auto;
+    border: 0px solid #007be0;
+    width: 10%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.uploadtable  td, table.uploadtable  th {
+    border: 0px solid #AAAAAA;
+    padding: 5px 10px;
+
+}
+table.uploadtable  tbody td {
+    font-size: 13px;
+}
+
+
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.img-flex{
+    position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    padding: .4in;
+
+}
+
+.img-def{
+    margin: auto;
+    padding-bottom:.3in;
+}
+
+.comments{
+    display: block;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    padding: 1in;
+
+}
+
+.searching {
+    transition: background .15s,color .15s;
+    color: black;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 39px;
+    background: transparent;
+    border-style: solid;
+    border-color: #3B215C  ;
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 15px;
+    height: 34px;
+    width: 68%;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 13px;
+    font-style: normal;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #d5d9dd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+input.search {
+   
+    background: transparent;
+    border: none;
+    color: #fff;
+    background: #007be0;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    border-radius: 5px;}
+
+.signupbutton, .signinbutton, .newpost, .signoutbutton, .usernamedashboard, .search{
+    border: 0;
+    height: 80px;
+    font-weight:bold;
+    line-height: 30px;
+    margin-right: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #4B0082  ;
+    background: transparent;
+    border: none;
+    color: #fff;
+    background: #007be0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search{
+    height: 34px;
+}
+
+.usernamedashboard{
+    background-color: #0031e0;
+}
+
+.signin-logo{
+    padding: .7in;
+    width: 100px;
+    height: 100px;
+}
+
+.signinbox{
+    width:300px;
+    height: 40px;
+    border-color: #3B215C ;
+}
+
+.signINborder{
+    display: inline-block;
+    border-color: #3B215C;
+    border-radius: 40px;
+    border-style: solid;
+    border-top-color: lightcoral;
+    border-bottom-color: cornflowerblue;
+    border-right-color: yellowgreen;
+    border-left-color: orange;
+    width: 400px;
+    height: 520px;
+    margin-top: 30px;
+}
+
+.signUPborder{
+    display: inline-block;
+    border-color: #3B215C;
+    border-radius: 40px;
+    border-style: solid;
+    border-top-color: lightcoral;
+    border-bottom-color: cornflowerblue;
+    border-right-color: yellowgreen;
+    border-left-color: orange;
+    width: 440px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.introtext{
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+    color: #3B215C;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.websiteLogo{
+    height: 200px;
+}
+.myform input {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
